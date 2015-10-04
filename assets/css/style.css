@@ -1,0 +1,161 @@
+/* colors */
+/*  */
+
+/* @ css */
+
+@font-face {
+    font-family: after_shokregular;
+    src: url('../font/aftershok_regular_macroman/After_Shok-webfont.eot');
+    src: url('../font/aftershok_regular_macroman/After_Shok-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/aftershok_regular_macroman/After_Shok-webfont.woff') format('woff'),
+         url('../font/aftershok_regular_macroman/After_Shok-webfont.ttf') format('truetype'),
+         url('../font/aftershok_regular_macroman/After_Shok-webfont.svg#after_shokregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* global css */
+
+a img {
+    float: right;
+}
+
+a:link img, a:link {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:visited img, a:visited {
+    color: #FFF;
+    text-decoration: none;
+}
+
+a:hover img, a:hover {
+    color: #999;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FFF;
+}
+
+a:active img, a:active {
+    color: #FFF;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    height:100%;
+}
+
+@media only screen and (max-width : 600px) {
+    body {
+        overflow: scroll;
+    }
+}
+
+html {
+    background-image: url(../img/com-domino-kith.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #111;
+    height: 100%; 
+    color: white;
+    text-shadow:
+        1px  1px 2px #111,
+        1px -1px 2px #111,
+       -1px  1px 2px #111,
+       -1px -1px 2px #111;
+}
+
+@media only screen and (max-width : 600px) {
+    html {
+        overflow: hidden;
+    }
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border: 5px solid #111;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+nav {
+    background-color: rgba(255,255,255,0.0);
+    font-weight: 900;
+}
+
+.page-footer, .page-footer div.footer-copyright {
+    background-color: rgba(255,255,255,0.0);
+    font-weight: 900;
+}
+
+nav div a {
+    opacity: 1.0;
+}
+
+p {
+    display: inline;
+}
+
+/* id css */
+
+/* class css */
+
+@media only screen and (max-width : 600px) {
+    .character {
+        text-align: center;
+    }
+    
+    .character img {
+        float: none;
+    }
+}
+
+.circle{
+    margin: 20px;
+}
+
+@media only screen and (max-width : 600px) {
+    .container {
+        width: 85%;
+    }
+}
+
+.h3 {
+    font-size: 3em;
+}
+
+.h5 {
+    font-size: 1.5em;
+}
+
+.header {
+    display: inline;
+}
+
+.side-nav {
+    background-color: #111;
+    text-shadow: none;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #111;
+}
+
+.slider .slides {
+    background-color: #111;
+}
+
+.title {
+    font-family: after_shokregular;
+}

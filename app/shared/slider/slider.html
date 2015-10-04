@@ -1,0 +1,17 @@
+<div class="slider">
+    <ul class="slides">
+        <li ng-repeat="character in characters">
+            <a href="">
+                <img src="assets/img/{{ character.image }}" />
+            </a>
+            <div ng-if="$odd" class="caption right-align">
+                <h3>{{ character.name }}</h3>
+                <h5>{{ character.title }}</h5>
+            </div>
+            <div ng-if="$even" class="caption left-align">
+                <h3>{{ character.name }}</h3>
+                <h5>{{ character.title }}</h5>
+            </div>
+        </li>
+    </ul>
+</div>

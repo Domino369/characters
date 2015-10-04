@@ -1,0 +1,16 @@
+<nav>
+    <div class="nav-wrapper">
+        <a href="" class="brand-logo title left">&nbsp;D.STORM</a>
+        <a href="" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu&nbsp;</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li ng-repeat="character in characters">
+                <a href="">{{ character.name }}</a>
+            </li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li ng-repeat="character in characters">
+                <a href="">{{ character.name }}</a>
+            </li>
+        </ul>
+    </div>
+</nav>
