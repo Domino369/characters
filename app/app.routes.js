@@ -1,4 +1,4 @@
-app.config(['$routeProvider', function($routeProvider) {
+app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider.
         when('/', {
             templateUrl: 'app/components/home/home.html',
@@ -13,6 +13,6 @@ app.config(['$routeProvider', function($routeProvider) {
             controller: 'aboutController'
         }).
         otherwise({
-            redirectTo: ''
+            redirectTo: '/'
         });
 }]);
