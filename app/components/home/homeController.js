@@ -55,6 +55,8 @@ app.controller('homeController', function($scope, browser) {
                 'advanced.'}
     ];
     
+    $scope.aspects = $scope.characters.concat($scope.locations);
+    
     $scope.isMobile = browser.isMobile;
     $scope.isDesktop = browser.isDesktop;
 }); 
