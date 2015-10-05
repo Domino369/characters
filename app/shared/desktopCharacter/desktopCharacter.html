@@ -1,0 +1,19 @@
+<div ng-repeat="aspect in group" class="row valign-wrapper">
+    <a ng-if="$odd" href="">
+        <img class="circle hoverable left" src="assets/img/{{ aspect.image }}" />
+    </a>
+    <p class="valign">
+        <a href="">
+            <span class="h3">{{ aspect.name }}</span>
+            <span class="hide-on-med-only">&nbsp;&nbsp;</span>
+            <br class="hide-on-large-only" />
+            <span class="h5">{{ aspect.title }}</span>
+        </a>
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ aspect.story }}
+    </p>
+    <a ng-if="$even" href="">
+        <img class="circle hoverable right" src="assets/img/{{ aspect.image }}">
+    </a>
+</div>

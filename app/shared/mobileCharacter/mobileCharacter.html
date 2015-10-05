@@ -1,0 +1,17 @@
+<div ng-repeat="character in characters" class="row">
+    <div class="character">
+        <a href="">
+            <h3 class="header">{{ character.name }}</h3>
+            <br />
+            <h5 class="header">{{ character.title }}</h5>
+            <br />
+        </a>
+        <a href="">
+            <img class="circle hoverable" src="assets/img/{{ character.image }}" />
+        </a>
+    </div>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        {{ character.story }}
+    </p>
+</div>
