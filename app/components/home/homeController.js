@@ -1,4 +1,4 @@
-app.controller('homeController', function($scope) {
+app.controller('homeController', function($scope, browser) {
     $scope.characters = [
         {name: 'Kith',
          title: 'The Demon Lord',
@@ -34,7 +34,10 @@ app.controller('homeController', function($scope) {
          story: 'The now demon lord of the 626th layer of the Abyss, Kith survived through the turmoil that ' +
                 'was the previous abyssal layer. Through long journey, she succeeded in killing her father ' +
                 'and taking over the then tortured and enslaved layer. She reshaped it to become a paradise ' +
-                'to her newfound race of Kit\'lins created in tandem with Kate.'},
+                'to her newfound race of Kit\'lins created in tandem with Kate.'}
+    ];
+    
+    $scope.locations = [
         {name: 'Kit\'la',
          title: '626th Layer of the Abyss',
          image: 'e3conceptart_disapproach.jpg',
@@ -51,4 +54,7 @@ app.controller('homeController', function($scope) {
                 'intervened by Kate in times of need. The city often gets praise for being technologically ' +
                 'advanced.'}
     ];
+    
+    $scope.isMobile = browser.isMobile;
+    $scope.isDesktop = browser.isDesktop;
 }); 

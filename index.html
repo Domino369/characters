@@ -31,7 +31,7 @@
 
         <!-- Add your site or application content here -->
         
-        <header></header>
+        <header group="characters.concat(locations)"></header>
         
         <main ng-view></main>
         
@@ -53,13 +53,15 @@
         <script src="app/app.module.js"></script>
         <script src="app/app.routes.js"></script>
         
+        <script src="assets/js/script.js"></script>
+        
+        <script src="app/components/home/homeService.js"></script>
         <script src="app/components/home/homeController.js"></script>
-        <script src="app/components/home/homeServices.js"></script>
         
         <script src="app/shared/header/headerDirective.js"></script>
         <script src="app/shared/slider/sliderDirective.js"></script>
+        <script src="app/shared/desktopCharacter/desktopCharacterDirective.js"></script>
+        <script src="app/shared/mobileCharacter/mobileCharacterDirective.js"></script>
         <script src="app/shared/footer/footerDirective.js"></script>
-        
-        <script src="assets/js/script.js"></script>
     </body>
 </html>

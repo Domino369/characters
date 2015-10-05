@@ -6,6 +6,9 @@ angular.module( 'charactersApp' ).directive(
         return({
             link: link,
             restrict: 'E',
+            scope: {
+                group: '='
+            },
             templateUrl: 'app/shared/header/header.html'
         });
 

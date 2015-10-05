@@ -2,46 +2,29 @@
     <br />
     <h4 class="title center">CHARACTERS AND LOCATIONS</h4>
     <br />
-    <slider></slider>
+    <slider group="characters.concat(locations)"></slider>
     
+    <br /><br /><br /><br />
+    <h4 class="title center">CHARACTERS</h4>
     <br /><br />
     
-    <div ng-repeat="character in characters" class="row">
-        <div class="row hide-on-med-and-up">
-            <div class="character">
-                <a href="">
-                    <h3 class="header">{{ character.name }}</h3>
-                    <br />
-                    <h5 class="header">{{ character.title }}</h5>
-                    <br />
-                </a>
-                <a href="">
-                    <img class="circle hoverable" src="assets/img/{{ character.image }}" />
-                </a>
-            </div>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                {{ character.story }}
-            </p>
-        </div>
-        <div class="row valign-wrapper hide-on-small-only">
-            <a ng-if="$odd" href="">
-                <img class="circle hoverable left" src="assets/img/{{ character.image }}">
-            </a>
-            <p class="valign">
-                <a href="">
-                    <span class="h3">{{ character.name }}</span>
-                    <span class="hide-on-med-only">&nbsp;&nbsp;</span>
-                    <br class="hide-on-large-only" />
-                    <span class="h5">{{ character.title }}</span>
-                </a>
-                <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                {{ character.story }}
-            </p>
-            <a ng-if="$even" href="">
-                <img class="circle hoverable right" src="assets/img/{{ character.image }}">
-            </a>
-        </div>
+    <div ng-if="isMobile">
+        <mobilecharacter group="characters"></mobilecharacter>
     </div>
+    <div ng-if="isDesktop">
+        <desktopcharacter group="characters"></desktopcharacter>
+    </div>
+    
+    <br /><br />
+    <h4 class="title center">LOCATIONS</h4>
+    <br /><br />
+    
+    <div ng-if="isMobile">
+        <mobilecharacter group="locations"></mobilecharacter>
+    </div>
+    <div ng-if="isDesktop">
+        <desktopcharacter group="locations"></desktopcharacter>
+    </div>
+    
+    <br /><br />
 </div>
