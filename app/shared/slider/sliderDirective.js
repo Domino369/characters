@@ -7,9 +7,6 @@ angular.module( 'charactersApp' ).directive(
             replace: true,
             link: link,
             restrict: 'E',
-            scope: {
-                group: '='
-            },
             templateUrl: 'app/shared/slider/slider.html'
         });
 

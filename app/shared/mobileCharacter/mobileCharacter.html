@@ -1,17 +1,17 @@
-<div ng-repeat="character in characters" class="row">
+<div ng-repeat="aspect in group" class="row">
     <div class="character">
         <a href="">
-            <h3 class="header">{{ character.name }}</h3>
+            <h3 class="header">{{ aspect.name }}</h3>
             <br />
-            <h5 class="header">{{ character.title }}</h5>
+            <h5 class="header">{{ aspect.title }}</h5>
             <br />
         </a>
         <a href="">
-            <img class="circle hoverable" src="assets/img/{{ character.image }}" />
+            <img class="circle hoverable" src="assets/img/{{ aspect.image }}" />
         </a>
     </div>
     <p>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        {{ character.story }}
+        {{ aspect.story }}
     </p>
 </div>

@@ -94,11 +94,6 @@ nav {
     font-weight: 900;
 }
 
-.page-footer, .page-footer div.footer-copyright {
-    background-color: rgba(255,255,255,0.0);
-    font-weight: 900;
-}
-
 nav div a {
     opacity: 1.0;
 }
@@ -141,6 +136,11 @@ p {
 
 .header {
     display: inline;
+}
+
+.page-footer, .page-footer div.footer-copyright {
+    background-color: rgba(255,255,255,0.0);
+    font-weight: 900;
 }
 
 .side-nav {

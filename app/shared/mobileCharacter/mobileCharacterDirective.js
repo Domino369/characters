@@ -7,7 +7,7 @@ angular.module( 'charactersApp' ).directive(
             link: link,
             restrict: 'E',
             scope: {
-                groups: '='
+                group: '='
             },
             templateUrl: 'app/shared/mobileCharacter/mobileCharacter.html'
         });

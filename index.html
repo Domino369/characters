@@ -6,7 +6,7 @@
         <title>D.storm's Characters</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!--<base href="/" />-->
+        <!--<base href="/characters/" />-->
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <!-- Place favicon.ico in the root directory -->
@@ -24,7 +24,7 @@
         
         <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body ng-app="charactersApp" ng-controller="homeController">
+    <body ng-app="charactersApp">
         
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -32,9 +32,7 @@
 
         <!-- Add your site or application content here -->
         
-        <header group="aspects"></header>
-        <main ng-view></main>
-        <footer></footer>
+        <ng-view></ng-view>
         
         <!-- boilerplate -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -56,6 +54,9 @@
         
         <script src="app/components/home/homeService.js"></script>
         <script src="app/components/home/homeController.js"></script>
+        
+        <script src="app/components/about/aboutService.js"></script>
+        <script src="app/components/about/aboutController.js"></script>
         
         <script src="app/shared/header/headerDirective.js"></script>
         <script src="app/shared/slider/sliderDirective.js"></script>
