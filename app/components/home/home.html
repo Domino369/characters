@@ -1,36 +1,25 @@
-<header></header>
-
 <main>
     <div class="container">
         <br />
         <h4 class="title center">CHARACTERS AND LOCATIONS</h4>
         <br />
+        
         <slider></slider>
         
         <br /><br /><br /><br />
         <h4 class="title center">CHARACTERS</h4>
         <br /><br />
         
-        <div ng-if="isMobile">
-            <mobilecharacter group="characters"></mobilecharacter>
-        </div>
-        <div ng-if="isDesktop">
-            <desktopcharacter group="characters"></desktopcharacter>
-        </div>
+        <panels group="characters"></panels>
         
         <br /><br />
         <h4 class="title center">LOCATIONS</h4>
         <br /><br />
         
-        <div ng-if="isMobile">
-            <mobilecharacter group="locations"></mobilecharacter>
-        </div>
-        <div ng-if="isDesktop">
-            <desktopcharacter group="locations"></desktopcharacter>
-        </div>
+        <panels group="locations"></panels>
         
         <br /><br />
     </div>
+    
+    
 </main>
-
-<footer></footer>

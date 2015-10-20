@@ -6,7 +6,7 @@
         <title>D.storm's Characters</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!--<base href="/characters/" />-->
+        <base href="/characters/" />
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <!-- Place favicon.ico in the root directory -->
@@ -32,7 +32,9 @@
 
         <!-- Add your site or application content here -->
         
+        <header></header>
         <ng-view></ng-view>
+        <footer></footer>
         
         <!-- boilerplate -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -58,10 +60,15 @@
         <script src="app/components/about/aboutService.js"></script>
         <script src="app/components/about/aboutController.js"></script>
         
-        <script src="app/shared/header/headerDirective.js"></script>
         <script src="app/shared/slider/sliderDirective.js"></script>
-        <script src="app/shared/desktopCharacter/desktopCharacterDirective.js"></script>
-        <script src="app/shared/mobileCharacter/mobileCharacterDirective.js"></script>
+        <script src="app/shared/slider/sliderController.js"></script>
+        
+        <script src="app/shared/panels/panelsDirective.js"></script>
+        <script src="app/shared/panels/panelsController.js"></script>
+        
+        <script src="app/shared/header/headerDirective.js"></script>
+        <script src="app/shared/header/headerController.js"></script>
+        
         <script src="app/shared/footer/footerDirective.js"></script>
     </body>
 </html>

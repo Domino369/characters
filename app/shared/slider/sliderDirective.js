@@ -6,12 +6,13 @@ angular.module( 'charactersApp' ).directive(
         return({
             replace: true,
             link: link,
+            controller: 'sliderController',
             restrict: 'E',
             templateUrl: 'app/shared/slider/slider.html'
         });
 
         // I bind the JavaScript events to the scope.
-        function link( scope, element, attributes ) {
+        function link( scope ) {
             var domSlider;
             
             var sliderLoaderInterval = $interval(function () {

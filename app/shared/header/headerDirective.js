@@ -5,6 +5,7 @@ angular.module( 'charactersApp' ).directive(
         // Return the directive configuration.
         return({
             link: link,
+            controller: 'headerController',
             restrict: 'E',
             templateUrl: 'app/shared/header/header.html'
         });
