@@ -7,21 +7,21 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', functio
         }).
         state('about', {
             url: '/{aspect:[A-Za-z0-9\-\_\']{1,30}}',
-            templateUrl: 'app/components/about.html',
+            templateUrl: 'app/components/about/about.html',
             controller: 'aboutController'
         }).
         state('story', {
             url: '/{aspect:[A-Za-z0-9\-\_\']{1,30}}/story',
-            templateUrl: 'app/components/story.html',
+            templateUrl: 'app/components/story/story.html',
             controller: 'storyController'
         }).
         state('sheets', {
             url: '/{aspect:[A-Za-z0-9\-\_\']{1,30}}/{game:[A-Za-z0-9\-\_\']{1,30}}',
-            templateUrl: 'app/components/sheets.html',
+            templateUrl: 'app/components/sheets/sheets.html',
             controller: 'sheetsController'
         });
         
     $urlRouterProvider.otherwise('/');
     
-    //$locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(true);
 }]);
