@@ -1,1 +1,1 @@
-var app = angular.module('charactersApp', ['ngRoute']);
+var app = angular.module('charactersApp', ['ui.router']);

@@ -1,0 +1,53 @@
+<div class="row">
+    <div ng-show="aspect.type == 'character'">
+        <h5 class="col s4 left-align">
+            Race:<br />
+            Gender:<br />
+            Age:<br />
+            Height:<br />
+            Weight:<br />
+            Alignment:<br /><br />
+            Hometown:<br />
+            Residence:<br /><br />
+            <div ng-repeat="relation in aspect.relations">
+                {{ relation.type }}:<br />
+            </div>
+        </h5>
+        
+        <h5 class="col s8 right-align">
+            {{ aspect.race }}<br />
+            {{aspect.gender }}<br />
+            {{ aspect.age }}<br />
+            {{ aspect.height }}<br />
+            {{ aspect.weight }}<br />
+            {{ aspect.alignment }}<br /><br />
+            {{ aspect.hometown }}<br />
+            {{ aspect.residence.name }}<br /><br />
+            <div ng-repeat="relation in aspect.relations">
+                {{ relation.name }}<br />
+            </div>
+        </h5>
+    </div>
+
+    <div ng-show="aspect.type == 'location'">
+        <h5 class="col s4 left-align">
+            Plane:<br />
+            Layer:<br />
+            Alignment:<br /><br />
+            <div ng-repeat="resident in aspect.residents">
+                {{ resident.type }}:<br />
+            </div>
+        </h5>
+    </div>
+    
+    <div ng-show="aspect.type == 'location'">
+        <h5 class="col s8 right-align">
+            {{ aspect.plane }}<br />
+            {{ aspect.layer }}<br />
+            {{ aspect.alignment }}<br /><br />
+            <div ng-repeat="resident in aspect.residents">
+                {{ resident.name }}<br />
+            </div>
+        </h5>
+    </div>
+</div>

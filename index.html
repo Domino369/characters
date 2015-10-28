@@ -6,7 +6,7 @@
         <title>D.storm's Characters</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <base href="/characters/" />
+        <!--<base href="/characters/" />-->
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <!-- Place favicon.ico in the root directory -->
@@ -33,7 +33,7 @@
         <!-- Add your site or application content here -->
         
         <header></header>
-        <ng-view></ng-view>
+        <ui-view></ui-view>
         <footer></footer>
         
         <!-- boilerplate -->
@@ -47,27 +47,30 @@
         <script src="assets/js/materialize.min.js"></script>
         
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+        <script src="assets/js/angular-ui-router.min.js"></script>
         
         <script src="app/app.module.js"></script>
         <script src="app/app.routes.js"></script>
         
         <script src="assets/js/script.js"></script>
         
+        <script src="app/shared/header/headerDirective.js"></script>
+        <script src="app/shared/header/headerController.js"></script>
+        
         <script src="app/components/home/homeService.js"></script>
         <script src="app/components/home/homeController.js"></script>
-        
-        <script src="app/components/about/aboutService.js"></script>
-        <script src="app/components/about/aboutController.js"></script>
-        
-        <script src="app/shared/slider/sliderDirective.js"></script>
-        <script src="app/shared/slider/sliderController.js"></script>
         
         <script src="app/shared/panels/panelsDirective.js"></script>
         <script src="app/shared/panels/panelsController.js"></script>
         
-        <script src="app/shared/header/headerDirective.js"></script>
-        <script src="app/shared/header/headerController.js"></script>
+        <script src="app/shared/slider/sliderDirective.js"></script>
+        <script src="app/shared/slider/sliderController.js"></script>
+        
+        <script src="app/components/about/aboutService.js"></script>
+        <script src="app/components/about/aboutController.js"></script>
+        
+        <script src="app/shared/stats/statsDirective.js"></script>
+        <script src="app/shared/stats/statsController.js"></script>
         
         <script src="app/shared/footer/footerDirective.js"></script>
     </body>

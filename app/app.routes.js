@@ -1,24 +1,27 @@
-app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-    $routeProvider.
-        when('/', {
+app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
+    $stateProvider.
+        state('home', {
+            url: '/',
             templateUrl: 'app/components/home/home.html',
             controller: 'homeController'
         }).
-        when('/:name', {
-            templateUrl: 'app/components/about/about.html',
+        state('about', {
+            url: '/{aspect:[A-Za-z0-9\-\_\']{1,30}}',
+            templateUrl: 'app/components/about.html',
             controller: 'aboutController'
         }).
-        when('/:name/story', {
-            templateUrl: 'app/components/story/story.html',
+        state('story', {
+            url: '/{aspect:[A-Za-z0-9\-\_\']{1,30}}/story',
+            templateUrl: 'app/components/story.html',
             controller: 'storyController'
         }).
-        when('/:name/sheets', {
-            templateUrl: 'app/components/sheets/sheets.html',
+        state('sheets', {
+            url: '/{aspect:[A-Za-z0-9\-\_\']{1,30}}/{game:[A-Za-z0-9\-\_\']{1,30}}',
+            templateUrl: 'app/components/sheets.html',
             controller: 'sheetsController'
-        }).
-        otherwise({
-            redirectTo: '/'
         });
         
-    $locationProvider.html5Mode(true);
+    $urlRouterProvider.otherwise('/');
+    
+    //$locationProvider.html5Mode(true);
 }]);

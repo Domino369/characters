@@ -1,7 +1,7 @@
 <div class="slider">
     <ul class="slides">
         <li ng-repeat="aspect in aspects">
-            <a href="">
+            <a href="{{ aspect.id }}">
                 <img src="assets/img/{{ aspect.image }}" />
             </a>
             <div ng-if="$odd" class="caption right-align">

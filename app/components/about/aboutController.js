@@ -1,4 +1,4 @@
-app.controller('aboutController', function($scope, $routeParams, $filter) {
+app.controller('aboutController', function($scope, $stateParams) {
     $scope.aspects = {
         kith: {
             name: 'Kith',
@@ -30,5 +30,6 @@ app.controller('aboutController', function($scope, $routeParams, $filter) {
             image: 'fantasy-city-v2.jpg'}
     };
     
-    $scope.aspect = $scope.aspects[$routeParams.name];
+    $scope.key = $stateParams.aspect;
+    $scope.aspect = $scope.aspects[$stateParams.aspect];
 });

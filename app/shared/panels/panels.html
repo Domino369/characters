@@ -1,14 +1,13 @@
-
 <div class="hide-on-med-and-up">
     <div ng-repeat="aspect in group" class="row">
         <div class="character">
-            <a href="">
+            <a href="{{ aspect.id }}">
                 <h3 class="header">{{ aspect.name }}</h3>
                 <br />
                 <h5 class="header">{{ aspect.title }}</h5>
                 <br />
             </a>
-            <a href="">
+            <a href="{{ aspect.id }}">
                 <img class="circle hoverable" src="assets/img/{{ aspect.image }}" />
             </a>
         </div>
@@ -18,13 +17,14 @@
         </p>
     </div>
 </div>
+
 <div class="hide-on-small-only">
     <div ng-repeat="aspect in group" class="row valign-wrapper">
-        <a ng-if="$odd" href="">
+        <a ng-if="$odd" href="{{ aspect.id }}">
             <img class="circle hoverable left" src="assets/img/{{ aspect.image }}" />
         </a>
         <p class="valign">
-            <a href="">
+            <a href="{{ aspect.id }}">
                 <span class="h3">{{ aspect.name }}</span>
                 <span class="hide-on-med-only">&nbsp;&nbsp;</span>
                 <br class="hide-on-large-only" />
@@ -34,7 +34,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             {{ aspect.story }}
         </p>
-        <a ng-if="$even" href="">
+        <a ng-if="$even" href="{{ aspect.id }}">
             <img class="circle hoverable right" src="assets/img/{{ aspect.image }}">
         </a>
     </div>

@@ -1,11 +1,18 @@
 app.controller('headerController', function($scope) {
     $scope.aspects = [
-        {name: 'Kith'},
-        {name: 'Kate'},
-        {name: 'Hikari'},
-        {name: 'Kith II'},
-        {name: 'Keizen Mikazuki'},
-        {name: 'Kit\'la'},
-        {name: 'Crystelia'}
+        {id: 'kith',
+         name: 'Kith'},
+        {id: 'kate',
+         name: 'Kate'},
+        {id: 'hikari',
+         name: 'Hikari'},
+        {id: 'kith_ii',
+         name: 'Kith II'},
+        {id: 'keizen_mikazuki',
+         name: 'Keizen Mikazuki'},
+        {id: 'kitla',
+         name: 'Kit\'la'},
+        {id: 'crystelia',
+         name: 'Crystelia'}
     ];
 }); 
